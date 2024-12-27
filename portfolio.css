@@ -1,0 +1,247 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.logo{
+  width: 10%;
+  height: 10%;
+}
+.navbar {
+  background-color: #121212;
+}
+
+.nav-link {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+#banner {
+  background: linear-gradient(135deg, #121212, #1a1a1a);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 2.5rem;
+  color: #00bfff;
+}
+
+#banner p {
+  font-size: 1.2rem;
+  color: #d3d3d3;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  color: #00bfff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icons a i {
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #007acc;
+  transform: translateY(-5px);
+}
+
+.card {
+  background-color: #292929;
+  border: none;
+  color: #fff;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-default {
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.image-hover {
+  transform: translateX(100%);
+  z-index: 0;
+}
+
+.image-container:hover .image-default {
+  transform: translateX(-100%);
+}
+
+.image-container:hover .image-hover {
+  transform: translateX(0);
+  z-index: 1;
+}
+
+#education {
+  padding: 3rem 0;
+  color: #fff;
+}
+
+#education h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  text-align: center;
+}
+
+#education p {
+  text-align: center;
+  color: #000000;
+}
+
+#education h4 {
+  color: #00bfff;
+  margin-top: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  margin: 5px;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.badge.bg-dark {
+  background-color: #292929;
+  color: #fff;
+}
+
+.badge.bg-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+#contact {
+  background-color: #121212;
+  padding: 3rem 0;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  text-align: center;
+}
+
+form input,
+form textarea {
+  background-color: #292929;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #d3d3d3;
+}
+
+form button {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #007acc;
+}
+
+footer {
+  background-color: #121212;
+  color: #d3d3d3;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer .social-icons a {
+  color: #00bfff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+footer .social-icons a i {
+  font-size: 1.5rem;
+}
+
+footer .social-icons a:hover {
+  color: #007acc;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  #banner h1 {
+    font-size: 2rem;
+  }
+
+  #banner p {
+    font-size: 1rem;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #banner h1 {
+    font-size: 1.5rem;
+  }
+
+  #banner p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+  }
+}
